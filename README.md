@@ -113,4 +113,19 @@ Code Explanation:
 5-A small delay(10) is added to reduce unnecessary CPU load in simulation.
 
 
+8. How It Works
+When a button is pressed, the Arduino detects a HIGH signal on the corresponding pin. This triggers the connected LED pin to go HIGH, turning the LED on. Once the button is released, the signal goes LOW and the LED turns off. This is a direct mapping of digital input to output.
+
+9. How to Upload
+1-Open the Arduino IDE.
+
+2-Connect your Arduino Uno to your computer via USB.
+
+3-Paste the code above into a new sketch.
+
+4-Select the correct board and COM port under the Tools menu.
+
+5-Click the Upload button (right arrow icon).
+
+6-Press the buttons to see the LEDs light up in real time!
 
