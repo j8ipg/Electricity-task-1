@@ -1,30 +1,29 @@
 # Electricity-task-1
+
 # 🔌 Arduino Project: 3 LEDs with 3 Push Buttons
 
 ## 1. Project Title
 **Controlling LEDs with Push Buttons using Arduino**
 
-This project focuses on building a basic circuit using an Arduino Uno where three push buttons are each assigned to control one LED. The goal is to demonstrate digital input (from buttons) and digital output (to LEDs) — a fundamental concept in Arduino programming.
+This project allows the control of three individual LEDs using three push buttons with an Arduino Uno. Each button turns on a corresponding LED when pressed and turns it off when released.
 
 ## 2. Description
-This beginner-friendly project helps you understand how to read input signals from physical buttons and use those signals to control external devices — in this case, LEDs. When a button is pressed, its corresponding LED lights up. Once the button is released, the LED turns off. The circuit and code are simple, making this a great entry point into Arduino and electronics.
-
+This beginner-level Arduino project demonstrates the use of digital input (buttons) and digital output (LEDs). The circuit is designed to help learners understand basic wiring and logic in embedded systems, especially useful for students and hobbyists starting with Arduino.
 Screenshots or Circuit Diagram:
 
 ![Surprising Snicket](https://github.com/user-attachments/assets/090c50f3-5253-4e5c-b990-efcd7df9c9af)
 
 ## 3. Purpose
-The main goal of this project is to:
-- Learn how to set up digital inputs and outputs on an Arduino.
-- Understand how buttons and LEDs interact through code and hardware.
-- Gain hands-on experience wiring simple components on a breadboard.
-- Build confidence in uploading and running Arduino sketches.
+- Learn how to set up digital input/output on Arduino.
+- Practice reading button inputs and controlling output devices.
+- Understand the behavior of pull-down resistors.
+- Build a working interactive circuit with real-time feedback.
 
 ## 4. Requirements
 - Arduino Uno (or compatible)
-- USB cable
-- Arduino IDE (installed on your PC)
-- Breadboard
+- USB cable for programming
+- Arduino IDE (installed on your computer)
+- Breadboard for wiring
 - Jumper wires
 
 ## 5. Components
@@ -45,27 +44,19 @@ The main goal of this project is to:
 | Button 2 | D3         | LED 2 | D6        |
 | Button 3 | D4         | LED 3 | D7        |
 
-> **Note:** Each button is connected to GND through a 10kΩ pull-down resistor.  
-> LEDs are connected in series with 220Ω resistors to protect them from excess current.
+> **Note:** Each button should be connected with a 10kΩ pull-down resistor to GND.  
+> LEDs are connected in series with 220Ω resistors to limit current.
 
-##7. How It Works
-When a button is pressed, the Arduino detects a HIGH signal on the corresponding pin. This triggers the connected LED pin to go HIGH, turning the LED on. Once the button is released, the signal goes LOW and the LED turns off. This is a direct mapping of digital input to output.
+## 7. How It Works
+Each time a push button is pressed, the Arduino reads a HIGH signal on the corresponding pin. It responds by sending a HIGH output to the connected LED pin, lighting up the LED. Releasing the button sends a LOW signal, turning off the LED. This logic provides instant feedback for button interaction.
 
-
-##8. How to Upload
-1-Open the Arduino IDE.
-
-2-Connect your Arduino Uno to your computer via USB.
-
-3-Paste the code above into a new sketch.
-
-4-Select the correct board and COM port under the Tools menu.
-
-5-Click the Upload button (right arrow icon).
-
-6-Press the buttons to see the LEDs light up in real time!
-
-
+## 8. How to Upload
+1. Open the Arduino IDE.
+2. Connect your Arduino Uno to your computer via USB.
+3. Copy and paste the code from section 9 into a new sketch.
+4. Select the correct board and COM port from the **Tools** menu.
+5. Click the **Upload** button.
+6. Press each button to see the respective LED turn ON/OFF.
 
 ## 9. Arduino Code
 
@@ -110,6 +101,7 @@ void loop()
 
   delay(10); // Small delay to improve simulation stability
 }
+
 
 
 
