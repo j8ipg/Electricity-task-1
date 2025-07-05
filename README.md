@@ -111,25 +111,6 @@ void loop()
   delay(10); // Small delay to improve simulation stability
 }
 
-Screenshots or Circuit Diagram:
-
-![Surprising Snicket](https://github.com/user-attachments/assets/090c50f3-5253-4e5c-b990-efcd7df9c9af)
-
-Code Explanation:
-
-1-setup() sets pins 2, 3, 4 as inputs for the buttons, and pins 5, 6, 7 as outputs for the LEDs.
-
-
-2-loop() continuously reads the state of each button:
-
-
-3-If the button is pressed (HIGH), the corresponding LED is turned on.
-
-
-4-If the button is not pressed, the LED is turned off.
-
-
-5-A small delay(10) is added to reduce unnecessary CPU load in simulation.
 
 
 
