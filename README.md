@@ -30,4 +30,4 @@ void loop()
     digitalWrite(7, LOW);
   }
   delay(10); // Delay a little bit to improve simulation performance
-}
+}![Surprising Snicket](https://github.com/user-attachments/assets/090c50f3-5253-4e5c-b990-efcd7df9c9af)
