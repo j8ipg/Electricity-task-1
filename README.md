@@ -4,7 +4,7 @@ This project demonstrates a simple Arduino setup where three push buttons are us
 
 Screenshots or Circuit Diagram:
 
-}![Surprising Snicket](https://github.com/user-attachments/assets/090c50f3-5253-4e5c-b990-efcd7df9c9af)
+![Surprising Snicket](https://github.com/user-attachments/assets/090c50f3-5253-4e5c-b990-efcd7df9c9af)
 
 cood used:
 
